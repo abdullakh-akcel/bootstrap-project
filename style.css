@@ -1,0 +1,329 @@
+#home{
+    background-image: linear-gradient(rgba(17, 22, 27, 0.5), rgba(99, 99, 104, 0.5)), url(img/03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .btn-pad{
+    padding: 6px 15px;
+}
+
+section#services{
+    padding: 100px 0;
+}
+
+.line{
+    height: 2px;
+    width: 120px;
+    background-color: rgb(10, 10, 10);
+    margin: 15px auto;
+}
+
+#services .icon{
+    height: 60px;
+    width: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#services .icon i{
+    font-size: 25Px;
+}
+
+
+
+#portfolio .image{
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#portfolio .image:hover img{
+    transform: scale(1.2);
+}
+
+#portfolio .image .hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    background-image: linear-gradient(rgba(0, 106, 255, 0.5), rgba(14, 219, 255, 0.5) );
+    transition: 0.5s;
+}
+
+#portfolio .image:hover .hover{
+    opacity: 1;
+}
+
+#features .d-flex{
+    margin-top: 40px;
+}
+
+#features .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 11px;
+}
+
+#features .text{
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+
+#team .cardd{
+    height: 550px;
+    
+}
+
+#team .cardd .header{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+
+#team .cardd .header img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#team .cardd:hover img{
+    transform: translateY(-50px);
+}
+
+#team .cardd .header .icons{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25%;
+    width: 100%;    
+    /* background-color: blue; */
+    position: absolute;
+    bottom: -50px;
+    transition: 0.5s;
+}
+
+#team .cardd .header .icons .icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 8px; */
+}
+
+#team .cardd .header .icons .icon i{
+    /* color: white; */
+    font-size: 20px;
+}
+
+#team .cardd .header .icons .icon:hover{
+    background-color: white;
+    color: rgb(0, 102, 255);
+}
+
+
+#team .cardd:hover .icons{
+    bottom: 0;
+
+}
+
+
+#team .cardd .card-main{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(43, 41, 79);
+}
+
+#team .cardd .two{
+    background-color: rgb(5, 5, 148);
+}
+
+#team .cardd .card-main .sm-line{
+    height: 2px;
+    width: 100px;
+    background-color: gray;
+    margin: 10px 0;
+}
+
+#testimonials{
+    padding: 100px 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonials img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#testimonials p{
+    color: gray;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: 'Neucha', cursive;
+}
+
+#testimonials h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#testimonials h5{
+    text-align: center;
+    font-size: 17px;
+    color: gray;
+}
+
+#contact img{
+    width: 100%;
+    height: 500px;
+}
+
+#contact .input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#contact .input input{
+    padding: 5px 10px;
+}
+
+#contact .input textarea{
+    padding: 5px 10px;
+}
+
+#contact .input label{
+    font-size: 15px;
+    color: gray;
+    font-weight: 500;
+}
+
+#contact .input input:hover{
+    border: 1px solid rgb(0, 102, 255);
+}
+
+#contact .input textarea:hover{
+    border: 1px solid rgb(0, 102, 255);
+}
+
+#contact .input:nth-child(4) input{
+    width: 15%;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#contact .start{
+    height: 200px;
+    width: 100%;
+    padding: 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+#contact .start h2{
+    color: white;
+}
+
+#contact .start button{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+#contact .practice{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+#contact p{
+    color: gray;
+}
+
+#contact .practice .practiced{
+    width: 30%;
+}
+
+#contact .practice .icons{
+    /* border: 1px solid black; */
+}
+
+#contact .practice .icons i{
+    font-size: 20px;
+    color: gray;
+    margin-right: 5px;
+}
+
+#contact .practice .icons i:hover{
+    color: rgb(0, 102, 255);
+}
+
+#contact .practice ul.menu li{
+    list-style: none;
+}
+
+#contact .practice ul.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+
+}
+
+#contact .practice a{
+    text-decoration: none;
+    color: gray;
+}
+
+#contact .practice a:hover{
+    color: rgb(0, 102, 255);
+}
+
+#contact .practice h2{
+    font-size: 25px;
+}
